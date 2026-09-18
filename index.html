@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hbd ayggggqu yang cantik</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head> 
+
+<body>
+
+    <div class="cover">
+
+        <div class="card">
+
+            <h3>🎉 HAPPY BIRTHDAY 🎉 <br> 20 september 2026</h3>
+
+            <h1>Steviana Flara Manansal</h1>
+
+            <p>
+                tetap semangat & selalu tersenyum
+            </p>
+
+            <button id="openBtn">
+                🎁 OPEN 🎁
+            </button>
+
+        </div>
+
+    </div>
+
+   <section id="home">
+
+    <div class="hero">
+
+        <img src="images/IMG-20230919-WA0021_073335.jpg" alt="Foto Ulang Tahun">
+
+        <h1>🎂 Selamat Ulang Tahun 🎂</h1>
+
+        <h2>❤️ Ayggggqu ❤️</h2>
+
+        <p>
+
+            selamat bertambah usia, makin sabar dan kuat
+
+            serta do'a terbaik untukmu.....
+
+            semoga di umur sekarang semesta lebih berpihak yaa
+
+            dan semoga bisa mendapatkan hal yang selama ini 
+
+            di perjuangan!!
+
+            dan semoga itu selamanya.
+
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- GALLERY -->
+<!-- ===================================== -->
+
+<section id="menu">
+
+    <h2> BilTep07 </h2>
+
+    <div class="menu-container">
+
+        <div class="menu-card" onclick="openGallery()">
+
+    <video class="menu-bg" autoplay muted loop playsinline>
+        <source src="videos/menu-gallery.mp4" type="video/mp4">
+    </video>
+
+    <div class="menu-content">
+        📷
+        <h3>Gallery</h3>
+    </div>
+
+</div>
+
+        <div class="menu-card" onclick="openVideo()">
+
+    <video class="menu-bg" autoplay muted loop playsinline>
+        <source src="videos/menu-preview.mp4" type="video/mp4">
+    </video>
+
+    <div class="menu-content">
+        🎥
+        <h3>Video</h3>
+    </div>
+
+</div>
+
+       <div class="menu-card" onclick="openSpecial()">
+
+    <video class="menu-bg" autoplay muted loop playsinline>
+        <source src="videos/menu-love.mp4" type="video/mp4">
+    </video>
+
+    <div class="menu-content">
+        ❤️
+        <h3>Ayggggqu</h3>
+    </div>
+
+</div>
+
+<div class="menu-card" onclick="openPlaylist()">
+
+    <video class="menu-bg" autoplay muted loop playsinline>
+        <source src="videos/menu-playlist.mp4" type="video/mp4">
+    </video>
+
+    <div class="menu-content">
+        🎵
+        <h3>Lagu Favorit</h3>
+    </div>
+
+
+</div>
+
+</section>
+
+<section id="galleryPage" style="display:none;">
+
+<h2> Di antara jutaan manusia, aku bersyukur semesta mempertemukanku denganmu </h2>
+
+<button class="back-btn" onclick="backMenu()">
+🏠 Home
+</button>
+
+<div class="gallery-container">
+
+<img src="images/IMG-FOTO1.jpeg">
+
+<img src="images/IMG-FOTO2.jpeg">
+
+<img src="images/IMG-FOTO3.jpeg">
+
+<img src="images/IMG-FOTO4.jpeg">
+
+<img src="images/IMG-FOTO5.jpeg">
+
+<img src="images/IMG-FOTO6.jpeg">
+
+<img src="images/IMG-FOTO7.jpeg">
+
+<img src="images/IMG-FOTO8.jpeg">
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- LIGHTBOX -->
+<!-- ===================================== -->
+
+<div id="lightbox">
+
+    <span id="close">&times;</span>
+
+    <img id="lightbox-img">
+
+</div>
+
+<!-- ===================================== -->
+<!-- VIDEO -->
+<!-- ===================================== -->
+
+<section id="videoPage" style="display:none;">
+
+<h2> Bersamamu, aku belajar bahwa pulang bukanlah tempat, melainkan seseorang </h2>
+
+<p class="video-subtitle">
+    
+</p>
+
+<button class="back-btn" onclick="backMenu()">
+🏠 Kembali ke Menu
+</button>
+
+
+<div class="featured-video">
+
+<img src="images/thumb11.jpeg">
+
+<div class="featured-content">
+
+<h3> Moh Afandi Ginoga </h3>
+<h3>  & </h3>
+<h3> Steviana Flara Manansal </h3>
+
+<p>
+07-02-2022
+</p>
+
+<button onclick="playVideo('videos/kenangan.mp4')">
+▶ Putar Sekarang
+</button>
+
+</div>
+
+</div>
+
+
+<h2 class="section-title">Semua Video</h2>
+
+
+<div class="video-gallery">
+
+<div class="video-item" onclick="playVideo('videos/kenangan.mp4')">
+
+<img src="images/thumb1.jpeg">
+
+<span class="play-icon">▶</span>
+
+<h3></h3>
+
+</div>
+
+
+<div class="video-item" onclick="playVideo('videos/kenangan1.mp4')">
+
+<img src="images/thumb2.jpeg">
+
+<span class="play-icon">▶</span>
+
+<h3></h3>
+
+</div>
+
+
+<div class="video-item" onclick="playVideo('videos/kenangan2.mp4')">
+
+<img src="images/thumb3.jpeg">
+
+<span class="play-icon">▶</span>
+
+<h3></h3>
+
+</div>
+
+
+<div class="video-item" onclick="playVideo('videos/kenangan3.mp4')">
+
+<img src="images/thumb4.jpeg">
+
+<span class="play-icon">▶</span>
+
+<h3></h3>
+
+</div>
+
+</div>
+
+</section>
+
+<div id="videoPopup">
+
+<span id="closeVideo">&times;</span>
+
+<video id="popupVideo" controls></video>
+
+</div>
+
+<section id="specialPage" style="display:none;">
+
+<h2> Di setiap fotomu, aku melihat seseorang yang selalu ingin aku jaga, bukan hanya hari ini, tetapi selama Tuhan mengizinkan </h2>
+
+<button class="back-btn" onclick="backMenu()">
+🏠 Home
+</button>
+
+<div class="gallery-container">
+
+<img src="images/IMG-FOTO1a.jpeg">
+
+<img src="images/IMG-FOTO2b.jpeg">
+
+<img src="images/IMG-FOTO3c.jpeg">
+
+<img src="images/IMG-FOTO4d.jpeg">
+
+<img src="images/IMG-FOTO5e.jpeg">
+
+<img src="images/IMG-FOTO6f.jpeg">
+
+<img src="images/IMG-FOTO7g.jpeg">
+
+<img src="images/IMG-FOTO7h.jpeg">
+
+
+
+</div>
+
+</section>
+
+<section id="playlistPage" style="display:none;">
+
+<h2>🎵 Playlist Biltep07</h2>
+
+<button class="back-btn" onclick="backMenu()">
+🏠 Kembali ke Menu
+</button>
+
+<div class="now-playing">
+
+    <img
+    id="playlistCover"
+    src="images/cover.jpeg"
+    class="playlist-cover">
+
+    <h3 id="nowTitle">
+        Belum ada lagu diputar
+    </h3>
+
+    <p id="nowArtist">
+        Pilih salah satu lagu ❤️
+    </p>
+
+    
+
+    <div class="progress-bar">
+        <div id="progress"></div>
+    </div>
+
+    <div class="controls">
+
+        <button onclick="prevSong()">⏮</button>
+
+        <button id="playBtn" onclick="togglePlay()">▶</button>
+
+        <button onclick="nextSong()">⏭</button>
+
+    </div>
+
+</div>
+
+<div class="playlist-box">
+
+<h3>playlist</h3>
+
+<div class="song" onclick="playSong('music/sempurnaPL.mp3','Sempurna','Andra and The Backbone')">
+🎧 Sempurna
+<span>tepiwww</span>
+</div>
+
+<div class="song" onclick="playSong('music/untukperempuanyangsedangdipelukannkuPL.mp3',' untuk perempuanku','Payung Teduh')">
+🎧 untuk perempuanku
+<span>tepiwww</span>
+</div>
+
+<div class="song" onclick="playSong('music/foreverinyoureyesPL.mp3','forever in your eyes','Brian Rahmattio')">
+🎧 forever in your eyes
+<span>tepiwww</span>
+</div>
+
+<div class="song" onclick="playSong('music/bermuaraPL.mp3','bermuara','Rizky Febian')">
+🎧 bermuara
+<span>tepiwww</span>
+</div>
+
+<div class="song" onclick="playSong('music/kitausahakanrumahituPL.mp3','Kita Usahakan Rumah Itu','Sal Pribadi')">
+🎧 Kita Usahakan Rumah Itu
+<span>tepiwww</span>
+</div>
+
+<div class="song" onclick="playSong('music/langitfavoritPL.mp3','Langit Favorit','Luthfi Aulia')">
+🎧 Langit Favorit
+<span>lagu</span>
+</div>
+
+<div class="song" onclick="playSong('music/kecil-kecilanduluPL.mp3','Kecil-Kecilan Dulu','Sal Pribadi')">
+🎧 Kecil-Kecilan Dulu
+<span>lagu</span>
+</div>
+
+
+
+</section>
+
+<!-- ===================================== -->
+<!-- UCAPAN -->
+<!-- ===================================== -->
+
+<section id="message">
+
+    <h2>💌UNTUKMU💌</h2>
+
+    <p>
+        
+        aku tau ini pasti berat buat kamu
+        aku tau kekecewaan yang kamu rasain,
+        tapi kegagalan ini bukan akhir dari 
+        perjalananmu, ini bagian dari proses 
+        untuk membuatmu lebih kuat dan siap 
+        di masa depan.
+        
+    </p>
+
+</section>
+
+<footer>
+
+    <h3>❤️ Happy Birthday ke-21 ❤️</h3>
+
+    <p>terima kasih telah menjadi bagian terindah dalam setiap langkahku</p>
+
+</footer>
+
+<!-- ===================================== -->
+<!-- MUSIC -->
+<!-- ===================================== -->
+
+<audio id="bgMusic" loop>
+    <source src="music/Happybirthday.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="galleryMusic" loop>
+    <source src="music/introbandaneira_gallery.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="specialMusic" loop>
+    <source src="music/ayggggqu.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="playlistMusic" loop></audio>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
